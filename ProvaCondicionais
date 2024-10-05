@@ -1,0 +1,12 @@
+boas_vindas = 'Código para classificação de números'
+print(boas_vindas)
+
+num = float(input('Digite um número: '))
+
+if num > 0:
+    print('Este número é positivo.')
+
+elif num < 0:
+    print('Este número é negativo')
+else:
+    print('Este número é zero.')
