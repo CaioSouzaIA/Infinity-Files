@@ -1,0 +1,16 @@
+começo = int(input('Digite o primeiro número: '))
+final = int(input('Digite o último número: '))
+
+soma = 0
+par = False
+
+for i in range(começo, final+1):
+    print(i)
+    if i % 2 == 0:
+        soma += i
+        par = True
+        
+if par:
+    print(f'A soma dos números pares é {soma}')
+else:
+    print('Não foram encontrados números pares.')
