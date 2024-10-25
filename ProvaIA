@@ -1,0 +1,21 @@
+num_alunos = int(input('Qual número de alunos? -> '))
+
+soma_medias = 0
+
+for i in range(num_alunos):
+    nome = input('Digite seu nome: ')
+    nota1 = float(input('Digite sua nota 1: '))
+    nota2 = float(input('Digite sua nota 2: '))
+    nota3 = float(input('Digite sua nota 3: '))
+
+    media = (nota1 + nota2 + nota3) / 3
+
+    soma_medias += media
+
+    if media >= 7:
+        print('Aprovado')
+    else:
+        print('Reprovado')
+media_turma = soma_medias / num_alunos
+
+print(f'A média geral da turma é: {media_turma:.2f}')
