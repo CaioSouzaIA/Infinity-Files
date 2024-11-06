@@ -1,0 +1,21 @@
+usuario_correto = "usuario123"
+senha_correta = "senha123"
+
+tentativas = 3
+
+for tentativa in range(tentativas):
+    usuario = input("Digite o nome de usuário: ")
+    senha = input("Digite a senha: ")
+
+    if usuario == usuario_correto and senha == senha_correta:
+        print("Bem-vindo!")
+        break  
+    else:
+        tentativas_restantes = tentativas - tentativa - 1
+        if tentativas_restantes > 0:
+            print(f"incorreto. Você tem {tentativas_restantes} tentativas restantes.")
+        else:
+            print("incorreto. Você não tem mais tentativas.")
+        if tentativa == tentativas - 1:
+            for i in range(3):
+                print("Acesso bloqueado")
