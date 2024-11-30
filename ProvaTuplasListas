@@ -1,0 +1,5 @@
+lista_de_frutas = ["Uva", "Banana", "Pêra", "morango", "abacate"]
+
+tupla_de_frutas = tuple(lista_de_frutas)
+
+print(tupla_de_frutas)
