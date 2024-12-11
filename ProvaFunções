@@ -1,0 +1,8 @@
+def calular_media(nota1,nota2,nota3):
+    return (nota1+nota2+nota3) / 3
+
+nota1 = float(input('Digite sua nota1: '))
+nota2 = float(input('Digite sua nota1: '))
+nota3 = float(input('Digite sua nota1: '))
+
+print(f' A média das notas é {calular_media(nota1,nota2,nota3)}')
